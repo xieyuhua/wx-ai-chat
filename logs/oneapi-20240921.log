@@ -1,0 +1,21 @@
+[SYS] 2024/09/21 - 16:55:05 | One API v0.8.3 started 
+[SYS] 2024/09/21 - 16:55:05 | SQL_DSN not set, using SQLite as database 
+[SYS] 2024/09/21 - 16:55:05 | database migration started 
+[SYS] 2024/09/21 - 16:55:07 | database migrated 
+[SYS] 2024/09/21 - 16:55:07 | no user exists, create a root user for you: username is root, password is 123456 
+[SYS] 2024/09/21 - 16:55:07 | channels Load success 
+[SYS] 2024/09/21 - 16:55:07 | REDIS_CONN_STRING not set, Redis is not enabled 
+[SYS] 2024/09/21 - 16:55:07 | Initializing Pricing 
+[SYS] 2024/09/21 - 16:55:07 | Checking for pricing updates 
+[SYS] 2024/09/21 - 16:55:07 | Pricing initialized 
+[SYS] 2024/09/21 - 16:55:07 | initializing token encoders 
+[SYS] 2024/09/21 - 16:55:21 | One API v0.8.3 started 
+[SYS] 2024/09/21 - 16:55:21 | SQL_DSN not set, using SQLite as database 
+[SYS] 2024/09/21 - 16:55:21 | database migration started 
+[SYS] 2024/09/21 - 16:55:21 | database migrated 
+[SYS] 2024/09/21 - 16:55:21 | channels Load success 
+[SYS] 2024/09/21 - 16:55:21 | REDIS_CONN_STRING not set, Redis is not enabled 
+[SYS] 2024/09/21 - 16:55:21 | Initializing Pricing 
+[SYS] 2024/09/21 - 16:55:21 | Checking for pricing updates 
+[SYS] 2024/09/21 - 16:55:21 | Pricing initialized 
+[SYS] 2024/09/21 - 16:55:21 | initializing token encoders 
