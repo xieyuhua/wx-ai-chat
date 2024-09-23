@@ -32,10 +32,11 @@ while True:
     for chat in msgs:
         msg = msgs.get(chat)   # 获取消息内容
         for i in msg:
+            
             if i.type == 'friend':
                 # ===================================================
                 # 处理消息逻辑
-                
+                print(i.content)
                 reply = gpt.chat(i.content)
                 
                 # ===================================================
