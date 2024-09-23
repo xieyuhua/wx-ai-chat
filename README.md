@@ -22,6 +22,27 @@ OPENAI_BASE_URL = http://localhost:3000/v1/
 pip install openai wxauto python-dotenv
 ```
 
+
+域名部署
+
+```
+server{
+   server_name openai.test.cn;  # 请根据实际情况修改你的域名
+
+   location / {
+          client_max_body_size  64m;
+          proxy_http_version 1.1;
+          proxy_pass http://localhost:3000;  # 请根据实际情况修改你的端口
+          proxy_set_header Host $host;
+          proxy_set_header X-Forwarded-For $remote_addr;
+          proxy_cache_bypass $http_upgrade;
+          proxy_set_header Accept-Encoding gzip;
+          proxy_read_timeout 300s;  # GPT-4 需要较长的超时时间，请自行调整
+   }
+}
+```
+
+
 ### 运行
 
 1. 登录微信
