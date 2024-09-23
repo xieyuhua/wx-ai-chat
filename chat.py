@@ -3,6 +3,7 @@ from wxauto import WeChat
 import os
 import time
 from dotenv import load_dotenv
+import pyttsx3  
 
 # 读取相关环境变量
 load_dotenv()
@@ -24,6 +25,11 @@ listen_list = [
 for i in listen_list:
     wx.AddListenChat(who=i)  # 添加监听对象
     
+ # 使用示例   text_to_speech("这是一条测试消息。")
+def text_to_speech(text):  
+    engine = pyttsx3.init()  
+    engine.say(text)  
+    engine.runAndWait()  
 
 # 持续监听消息，有消息则对接大模型进行回复
 wait = 1  # 设置1秒查看一次是否有新消息
@@ -36,7 +42,8 @@ while True:
             if i.type == 'friend':
                 # ===================================================
                 # 处理消息逻辑
-                print(i.content)
+                # print(i.content)
+                text_to_speech(i.content)
                 reply = gpt.chat(i.content)
                 
                 # ===================================================
