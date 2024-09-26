@@ -52,3 +52,34 @@ server{
 ```shell
 python chat.py
 ```
+
+### pywinauto
+```
+from pywinauto.application import Application
+
+# app =  Application('uia').connect(title_re="key")
+app =  Application(backend='uia').connect(path="C:\Program Files (x86)\Tencent\WeChat\WeChat.exe")
+
+# 打印登录界面窗口结构
+# dlg = app.window(title_re="key")
+dlg = app.window(class_name='WeChatMainWndForPC')  
+
+# dlg.print_control_identifiers()
+
+# widget = dlg.child_window(title="朋友圈", control_type="Button")
+# widget.click_input()
+
+# widget = dlg.child_window(title="搜索", control_type="Edit")
+# widget.click_input()
+# widget.type_keys("内容")
+
+widget = dlg.child_window(title="美女荷官在线发牌", control_type="Button")
+widget.click_input()
+widget.type_keys("月报，周报")
+
+# widget = dlg.child_window(title="美女荷官在线发牌", control_type="ListItem")
+
+# 查找并返回标题为“发送(S)”的按钮并点击
+but = dlg.child_window(title="发送(S)", control_type="Button")
+but.click_input()
+```
