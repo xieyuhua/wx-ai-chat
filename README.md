@@ -8,6 +8,7 @@ set OLLAMA_MODELS=E:\ollama
 ollama run qwen:7b
 //健康大模型
 ollama run monotykamary/medichat-llama3
+ollama run meditron
 
 one-api.exe
 默认 localhost:3000 root 123456
