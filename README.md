@@ -6,6 +6,7 @@
 set OLLAMA_HOST="0.0.0.0:11434"
 set OLLAMA_MODELS=E:\ollama
 ollama run qwen:7b
+//健康大模型
 ollama run monotykamary/medichat-llama3
 
 one-api.exe
